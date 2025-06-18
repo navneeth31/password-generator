@@ -1,6 +1,6 @@
-# 🔐 Secure Bash Password Manager
+# 🔐 Password Generator & Manager
 
-A simple, terminal-based password manager written in **Bash**. It uses **GPG** for symmetric encryption to securely store multiple credentials (service, username/email, and randomly generated passwords) in a single encrypted vault. Clipboard operations are supported via `xclip` (or `xsel`/`pbcopy`), and entries can be added, viewed, copied, or deleted through a menu-driven interface.
+A simple, terminal-based password manager written in **Bash**. It uses **GPG** for symmetric encryption to securely store multiple credentials (service, username/email, and randomly generated passwords) in a single encrypted vault. Clipboard operations are supported via `xclip` (or) `xsel`, and entries can be added, viewed, copied, or deleted through a menu-driven interface.
 
 ---
 
@@ -18,7 +18,7 @@ A simple, terminal-based password manager written in **Bash**. It uses **GPG** f
 - **CRUD Operations**
   - Add new service credentials (service name, username/email, generated password)
   - View stored entries with line numbers
-  - Copy password (or username/password) to clipboard, with auto-clear after 30 seconds
+  - Copy password to clipboard, which auto-clear's after 30 seconds
   - Delete entries by selecting their line number
 
 - **Clipboard Auto-Clear**  
@@ -71,7 +71,7 @@ A simple, terminal-based password manager written in **Bash**. It uses **GPG** f
    - *Add New Password: Generate and optionally save a credential*
    - *View/Copy Passwords: List entries and copy data to the clipboard*
    - *Delete an Entry: Remove credentials by their line number*
-   - *Exit: Re-encrypt the vault and exit*
+   - *Exit: Re-encrypt the vault and exit's*
 
 4. **On exit, all data is securely re-encrypted to `vault.txt.gpg`**
 
