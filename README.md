@@ -66,7 +66,7 @@ A simple, terminal-based password manager written in **Bash**. It uses **GPG** f
    ./password-manager.sh
    ```
 2. **Enter your master password (new or existing).**
-
+![Image](https://github.com/user-attachments/assets/42267cd4-02e2-4491-b126-848af488fffa)
 3. **Use the menu to:**
    - *Add New Password: Generate and optionally save a credential*
    - *View/Copy Passwords: List entries and copy data to the clipboard*
