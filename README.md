@@ -56,3 +56,21 @@ A simple, terminal-based password manager written in **Bash**. It uses **GPG** f
    sudo apt update
    sudo apt install gnupg openssl xclip
    ```
+
+---
+
+## 🎯 Usage
+
+1. **Run the script**
+   ```bash
+   ./password-manager.sh
+   ```
+2. **Enter your master password (new or existing).**
+
+3. **Use the menu to:**
+   - *Add New Password: Generate and optionally save a credential*
+   - *View/Copy Passwords: List entries and copy data to the clipboard*
+   - *Delete an Entry: Remove credentials by their line number*
+   - *Exit: Re-encrypt the vault and exit*
+
+4. **On exit, all data is securely re-encrypted to `vault.txt.gpg`**
