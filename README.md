@@ -44,11 +44,15 @@ A simple, terminal-based password manager written in **Bash**. It uses **GPG** f
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/navneeth31/bash-password-manager.git
+   git clone https://github.com/navneeth31/pwd-generator.git
    cd bash-password-manager
    ```
 2. **Make the script executable**
    ```bash
    chmod +x password-manager.sh
    ```
-
+3. **Install dependencies (if not already present)**
+   ```bash
+   sudo apt update
+   sudo apt install gnupg openssl xclip
+   ```
