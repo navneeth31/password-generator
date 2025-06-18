@@ -44,7 +44,7 @@ A simple, terminal-based password manager written in **Bash**. It uses **GPG** f
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/navneeth31/pwd-generator.git
+   git clone https://github.com/navneeth31/password-generator.git
    cd bash-password-manager
    ```
 2. **Make the script executable**
@@ -74,3 +74,22 @@ A simple, terminal-based password manager written in **Bash**. It uses **GPG** f
    - *Exit: Re-encrypt the vault and exit*
 
 4. **On exit, all data is securely re-encrypted to `vault.txt.gpg`**
+
+---
+
+## 🛡 Security Considerations
+
+- **Strong Master Password**  
+  Choose a robust master passphrase—losing it means losing access to all stored data.
+  
+- **Vault Backup**  
+  Periodically back up `vault.txt.gpg` to a secure location (offsite or encrypted storage).
+
+- **Limit Clipboard Exposure**  
+  Be cautious when copying sensitive data—clipboard auto-clears after 30 seconds, but avoid pasting into insecure environments.
+
+- **File Permissions**  
+  Ensure `vault.txt.gpg` and `vault_temp.txt` (while in use) have restrictive permissions
+  ```bash
+  chmod 600 vault.txt.gpg
+  ```
